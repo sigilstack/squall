@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://squall.zone/schemas/tribute-request.schema.json",
+  "title": "Squall Tribute Request",
+  "description": "A formalized request to delegate a subdomain under the Squall tribute zone.",
+  "type": "object",
+  "required": ["requester", "tribute", "legal"],
+  "properties": {
+    "requester": {
+      "type": "object",
+      "required": ["name", "email", "organization", "website"],
+      "properties": {
+        "name": { "type": "string" },
+        "email": {
+          "type": "string",
+          "description": "Base64-encoded email address",
+          "pattern": "^[A-Za-z0-9+/=]+$"
+        },
+        "organization": { "type": "string" },
+        "website": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "tribute": {
+      "type": "object",
+      "required": ["subdomain", "delegation_ns", "purpose"],
+      "properties": {
+        "subdomain": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]{1,63}$"
+        },
+        "delegation_ns": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "hostname"
+          },
+          "minItems": 1
+        },
+        "purpose": { "type": "string" },
+        "public_keys": {
+          "type": "object",
+          "properties": {
+            "pgp": { "type": ["string", "null"] },
+            "dnssec": { "type": ["string", "null"] }
+          },
+          "additionalProperties": false
+        },
+        "optional_metadata": {
+          "type": "object",
+          "properties": {
+            "sigil_version": { "type": "string" },
+            "artifacts_url": { "type": "string", "format": "uri" },
+            "squall_support": { "type": "boolean" }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    "legal": {
+      "type": "object",
+      "required": ["accept_terms", "license", "liability_acknowledged"],
+      "properties": {
+        "accept_terms": { "type": "boolean", "const": true },
+        "license": { "type": "string" },
+        "liability_acknowledged": { "type": "boolean", "const": true }
+      }
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

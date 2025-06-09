@@ -1,0 +1,31 @@
+{
+  "requester": {
+    "name": "Richard Maynard",
+    "email": "cmljaGFyZC5tYXluYXJkQGdtYWlsLmNvbQ==",
+    "organization": "Individual Contributor",
+    "website": "https://richardmaynard.dev"
+  },
+  "tribute": {
+    "subdomain": "richardmaynard",
+    "delegation_ns": [
+      "ns1.richardmaynard.dev",
+      "ns2.richardmaynard.dev"
+    ],
+    "purpose": "A professional-facing presence for secure experiments and principled infrastructure.",
+    "public_keys": {
+      "pgp": "mQENBFv7...",
+      "dnssec": "AwEAAcKr..."
+    },
+    "optional_metadata": {
+      "sigil_version": "v1.0.0",
+      "artifacts_url": "https://richardmaynard.dev/artifacts",
+      "squall_support": true
+    }
+  },
+  "legal": {
+    "accept_terms": true,
+    "license": "Apache-2.0",
+    "liability_acknowledged": true
+  },
+  "notes": "Stands tall in defense of elegant, battle-tested operations\u2014even when the realm tilts toward entropy."
+}

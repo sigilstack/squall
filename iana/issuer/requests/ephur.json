@@ -1,0 +1,31 @@
+{
+  "requester": {
+    "name": "The One Who Runes Backward",
+    "email": "cmljaGFyZC5tYXluYXJkQGdtYWlsLmNvbQ==",
+    "organization": "Uncertified Sigil Mechanics Guild",
+    "website": "https://ephur.net"
+  },
+  "tribute": {
+    "subdomain": "ephur",
+    "delegation_ns": [
+      "ns1.ephur.net",
+      "ns2.ephur.net"
+    ],
+    "purpose": "To cast entropy into the ordered lattice of DNS and observe the feedback loops in real time.",
+    "public_keys": {
+      "pgp": null,
+      "dnssec": null
+    },
+    "optional_metadata": {
+      "sigil_version": "v0.0.chaos",
+      "artifacts_url": "https://ephur.net/glyphs",
+      "squall_support": true
+    }
+  },
+  "legal": {
+    "accept_terms": true,
+    "license": "Apache-2.0",
+    "liability_acknowledged": true
+  },
+  "notes": "Zone operates at the intersection of madness and method. King’s Guard warded the sigils twice — just in case."
+}

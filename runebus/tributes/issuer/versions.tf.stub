@@ -1,0 +1,13 @@
+# a stub file that would be versions.tf if we didn't enforce
+# version pinning by the sigilstack-worker ; tooling will
+# use this stub to generate a versions.tf file for linting/scanning
+terraform {
+  required_providers {
+    cloudflare = {
+      source  = "cloudflare/cloudflare"
+      version = "~> 5.0"
+    }
+  }
+
+  required_version = ">= 1.10.0"
+}

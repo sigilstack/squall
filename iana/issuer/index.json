@@ -1,0 +1,12 @@
+{
+  "tribute_requests": [
+    {
+      "name": "ephur",
+      "path": "requests/ephur.json"
+    },
+    {
+      "name": "richardmaynard",
+      "path": "requests/richardmaynard.json"
+    }
+  ]
+}
