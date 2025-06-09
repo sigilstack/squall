@@ -1,0 +1,10 @@
+[
+  {
+    "source": "fixtures/tributes/ephur.json",
+    "subdomain": "ephur"
+  },
+  {
+    "source": "fixtures/tributes/richardmaynard.json",
+    "subdomain": "richardmaynard"
+  }
+]

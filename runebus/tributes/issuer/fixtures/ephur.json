@@ -1,0 +1,31 @@
+{
+  "requester": {
+    "name": "Anonymous Entity",
+    "email": "cmljaGFyZC5tYXluYXJkQGdtYWlsLmNvbQ==",
+    "organization": "SigilStack Underground",
+    "website": "https://ephur.net"
+  },
+  "tribute": {
+    "subdomain": "ephur",
+    "delegation_ns": [
+      "ns1.ephur.net",
+      "ns2.ephur.net"
+    ],
+    "purpose": "Channeling chaotic alignment into structured glyphs and absurdly resilient terraform.",
+    "public_keys": {
+      "pgp": "mQENBFv6...",
+      "dnssec": "AwEAAcEp..."
+    },
+    "optional_metadata": {
+      "sigil_version": "v0.0.1-alpha",
+      "artifacts_url": "https://ephur.net/squall",
+      "squall_support": true
+    }
+  },
+  "legal": {
+    "accept_terms": true,
+    "license": "Apache-2.0",
+    "liability_acknowledged": true
+  },
+  "notes": "Operates under the veil of beautiful madness; compliant with realm chaos harmonics."
+}
