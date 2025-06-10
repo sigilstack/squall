@@ -15,7 +15,7 @@ data "cloudflare_zone" "squall" {
 resource "cloudflare_zone" "tributes" {
   name = "tributes.${var.squall_root}"
   account = {
-    id = data.cloudflare_account.this.id
+    id = data.cloudflare_account.this.account_id
   }
 }
 
@@ -38,7 +38,7 @@ resource "cloudflare_dns_record" "tribute_ns_delegation" {
 resource "cloudflare_zone" "iana" {
   name = "iana.${var.squall_root}"
   account = {
-    id = data.cloudflare_account.this.id
+    id = data.cloudflare_account.this.account_id
   }
 }
 

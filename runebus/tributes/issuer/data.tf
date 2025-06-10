@@ -22,6 +22,13 @@ data "cloudflare_account" "this" {
   filter = {
     name = var.cloudflare_account_name
   }
+
+  lifecycle {
+    postcondition {
+      condition     = can(self.account_id)
+      error_message = "Cloudflare account '${var.cloudflare_account_name}' not found."
+    }
+  }
 }
 
 data "http" "tribute_index" {
