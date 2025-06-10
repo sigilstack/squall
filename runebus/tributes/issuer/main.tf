@@ -62,7 +62,7 @@ resource "cloudflare_dns_record" "requested_tributes" {
   for_each = toset(keys(local.all_tributes))
 
   zone_id = data.cloudflare_zone.squall.zone_id
-  name    = format("%s.issued.iana.squall.zone", each.key)
+  name    = format("%s.issued.iana.%s", each.key, var.squall_root)
   type    = "TXT"
   ttl     = 300
   proxied = false
